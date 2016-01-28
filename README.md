@@ -12,18 +12,19 @@ Use the github api documented here: https://developer.github.com/v3/ (sample req
 
 The end-user will enter a Github user's name and see a list of repositories for that user including a link to the repos. App needs to correctly handle the following events:
 
-The Github user does not exist
-Github user has no repos
-Github API does not respond
-We expect clear separation of responsibility (services, directives, controllers) and at least some unit-tests.
+- The Github user does not exist
+- Github user has no repos
+- Github API does not respond
+- We expect clear separation of responsibility (services, directives, controllers) and at least some unit-tests.
 
 Use any JavaScript libraries necessary but no more than necessary.
 
-angular
-sass/less
-html5
-bootstrap
-some third party plugins
+- angular
+- sass/less
+- html5
+- bootstrap
+- some third party plugins
+
 Please upload the solution to your github account once you have completed it and send me the link until tomorrow. The exercise shouldn´t take more than a few hours.
 
 If you have any questions, please reach out to Bojan (Email: bojan.dragojevic@goeuro.com, Skype: bojan.goeuro) who is eager to help you :)
