@@ -1,12 +1,12 @@
 <h2>Github Seeker</h2>
 <div id="custom-search-input">
     <div class="input-group col-md-12">
-        <form ng-submit="search()">
-            <input type="text" ng-model="user" class="  search-query form-control" placeholder="Search"/>
+        <form ng-submit="mainCtrl.search()">
+            <input type="text" ng-model="mainCtrl.user" class="  search-query form-control" placeholder="Search"/>
         </form>
     </div>
 </div>
 
-<div class="search-results" ng-repeat="repo in repos track by $index">
+<div class="search-results" ng-repeat="repo in mainCtrl.repos track by $index">
     <h3><a target="_blank" href="{{repo.html_url}}">{{repo.name}}</a></h3>
 </div>

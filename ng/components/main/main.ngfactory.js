@@ -3,7 +3,6 @@
 
     angular.module('github_search').factory('mainFactory', factory);
 
-
     function factory($http, $q) {
         return {
             getReposAsync: function (user) {
@@ -19,7 +18,6 @@
             }
         }
     }
-
 
 })();
 

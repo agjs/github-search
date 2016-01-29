@@ -3,17 +3,15 @@
 
     angular.module('github_search').controller('mainController', controller);
 
-
-
-    function controller($scope, toastr, mainFactory) {
-
-        $scope.search = function () {
-            mainFactory.getReposAsync($scope.user).then(function (repos) {
+    function controller(toastr, mainFactory) {
+        var vm = this;
+        vm.search = function () {
+            mainFactory.getReposAsync(vm.user).then(function (repos) {
                 if(repos.length) {
-                    $scope.repos = repos;
+                    vm.repos = repos;
                     toastr.success(repos.length, 'Repositories Found: ');
                 } else {
-                    toastr.warning(repos.message, 'User ' + $scope.user + ' has no repositories');
+                    toastr.warning(repos.message, 'User ' + vm.user + ' has no repositories');
                 }
 
             }).catch(function(error){
