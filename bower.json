@@ -1,0 +1,29 @@
+{
+  "name": "github-search",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Aleksandar Grbic <a@upbis.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/agjs/github-search",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "flibs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-mocks": "^1.4.9",
+    "angular-toastr": "^1.7.0",
+    "angular-ui-router": "^0.2.17",
+    "angular": "^1.4.9",
+    "bootstrap": "^3.3.6"
+  },
+  "devDependencies": {
+    "angular-mocks": "^1.4.9"
+  }
+}
